@@ -4,7 +4,7 @@ import joblib
 
 
 def train_model():
-    df = pd.read_excel("online_shopping_dataset.csv.xlsx")
+    df = pd.read_csv("shopping_data.csv")
 
     X = df[["price", "discount", "brand", "rating"]]
     y = df["buy"]
