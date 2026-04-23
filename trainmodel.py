@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import joblib
 
+
 def train_model():
     df = pd.read_excel("online_shopping_dataset.csv.xlsx")
 
@@ -13,6 +14,7 @@ def train_model():
 
     joblib.dump(model, "model.pkl")
     print("Model trained and saved as model.pkl")
+
 
 if __name__ == "__main__":
     train_model()
